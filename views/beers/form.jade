@@ -1,0 +1,24 @@
+extends ../layout
+ 
+block content
+  h1
+    | Minhas cervejas
+ 
+  form(action='/beers', method='POST')
+    label
+      span Nome
+      input(type='text', name='name', placeholder='Nome')
+ 
+    label
+      span Teor Alcoólico
+      input(type='text', name='alcohol')
+   
+    label
+      span Categoria
+      input(type='text', name='category', placeholder='Categoria')
+ 
+    label
+      span Descrição
+      textarea(name='description', placeholder='Descrição')
+ 
+    input(type='submit', value='Enviar')
